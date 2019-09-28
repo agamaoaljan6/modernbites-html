@@ -127,13 +127,13 @@ li a,
 
 li a:hover,
 .branding-link:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all .3s ease-in-out;
   background-size: 4px 50px;
   color: black;
 }
 
 .services-link:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all .3s ease-in-out;
   background-size: 4px 50px;
   color: white;
 }
@@ -171,7 +171,7 @@ li a:hover,
   /* background: black; */
   color: #333;
   font-size: 1em;
-  transition: all 0.5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .branding-button:hover {
@@ -185,13 +185,14 @@ li a:hover,
   background-color: #F5F3F1;
   display: flex;
   flex-direction: column;
+  padding: 7%;
 }
 
 .services {
   display: flex; 
   align-content: center; 
   justify-content: space-around;
-  height: 35vh;
+  /* height: 35vh; */
 }
 
 .services-title,
@@ -238,20 +239,20 @@ text-align: center;
 
 .review-buttons {
   display: flex; 
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 3%;
+  padding: 5%;
 }
 
 .review-button,
 .footer-button,
 .menu-button {
-  border: thin solid #333;
+  border: thin solid rgb(207, 207, 207);
   padding: 0.5em 1.5em;
   color: #333;
   font-size: 1em;
   margin-bottom: 1em;
-  transition: all 0.5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .review-button:hover,
@@ -304,7 +305,7 @@ text-align: center;
 }
 
 .black:hover {
-  color: rgb(162, 160, 160);
+  color: rgb(204, 204, 204);
 }
 
 .footer-newsletter {
@@ -317,28 +318,33 @@ text-align: center;
   color: #333;
   font-size: 1em;
   margin-bottom: 1em;
-  transition: all 0.5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 /* CONTENT 5 MENU */
 
-.content-5 {
+/* .content-5 {
   height: 100vh;
-}
+} */
 .menu-images {
   display: flex; 
   justify-content: center;
 }
 
 .menu-image {
-  padding: 5%;
-  margin-top:5em;
+    display: flex;
+    padding: 2%;
+    margin-top: 5em;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 400px;
 }
 
 .menu-text {
   display: grid; 
   grid-template-columns: 1fr 1fr;
-  padding: 4%;
+  padding: 3%;
+  grid-gap: 20px;
 }
 
 .menu-button {
@@ -347,4 +353,3 @@ text-align: center;
   justify-content: center; 
   margin: 0 auto; 
 }
-

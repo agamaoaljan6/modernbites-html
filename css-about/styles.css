@@ -105,18 +105,16 @@ small,
 
 .menu-item {
   padding: 0.1em;
-  
+
 }
 
 li a,
 .branding-link,
 .services-link {
   /* Hover Effect */
-  background: linear-gradient(
-    to bottom,
-    var(--mainColor) 0%,
-    var(--mainColor) 100%
-  );
+  background: linear-gradient(to bottom,
+      var(--mainColor) 0%,
+      var(--mainColor) 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 5px 1px;
@@ -151,6 +149,7 @@ li a:hover,
   font-size: 30px;
   text-transform: uppercase;
 }
+
 .branding .branding-image {
   text-align: center !important;
 }
@@ -158,10 +157,12 @@ li a:hover,
 .branding-button {
   margin: 0 5em;
 }
+
 .branding-link {
   margin-right: 5em;
   color: #fff;
 }
+
 .branding-item {
   display: flex;
   justify-content: center;
@@ -181,66 +182,48 @@ li a:hover,
   color: #fff;
 }
 
-/* CONTENT 2 - SERVICES */
-
-.content-2 {
-  background-color: #F5F3F1;
-  display: flex;
-  flex-direction: column;
-}
-
-.services {
-  display: flex; 
-  align-content: center; 
-  justify-content: space-around;
-  height: 35vh;
-}
-
-.services-title,
-.chef-title,
-.chef-name {
-  margin: 0 auto;
-  text-align: center; 
-  padding: 4%;
-}
-
-.services-description {
-text-align: center;
-}
-
-.services-link {
-  text-transform: uppercase;
-  text-decoration: none; 
-  color: #333;
-  font-size: 23px;
-}
-
-.services-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  padding: 1em;
-}
 
 
-/* CONTENT 3 chefS */
+/* CONTENT 3 chefs */
 
 .content-3 {
   padding: 5%;
   margin-top: 5em;
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: #F5F3F1;
   color: #333;
 }
+
 .chefs {
-  display: flex; 
+  display: flex;
   padding: 2%;
-  justify-content: space-around;
+  justify-content:center; 
+  align-items: center; 
+  margin: 0 auto;
+}
+
+.chef-description {
+  padding: 5%; 
+
+}
+
+.menu-image {
+   display: flex;
+   padding: 2%;
+   justify-content:center;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.chef-title,
+.chef-name {
+  margin: 0 auto;
+  text-align: center;
+  padding: 4%;
 }
 
 .chef-buttons {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 3%;
@@ -258,11 +241,17 @@ text-align: center;
 }
 
 .chef-button:hover,
-.footer-button:hover ,
-.menu-button:hover{
+.footer-button:hover,
+.menu-button:hover {
   background: var(--mainColor);
   color: #fff;
 }
+
+
+/* CONTENT 5 MENU */
+
+
+
 
 /* CONTENT 4 - FOOTER */
 
@@ -271,6 +260,7 @@ text-align: center;
   background-color: #636262;
   color: #F5F3F1;
 }
+
 .footer-content {
   display: flex;
   flex-direction: row;
@@ -278,29 +268,30 @@ text-align: center;
 }
 
 .left-side {
-  line-height: 30px; 
+  line-height: 30px;
   text-align: center;
 }
 
 .right-side {
-  display: flex; 
-  justify-content: space-around; 
-  align-items: center; 
-  flex-direction: column; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-soc {
-  display: flex; 
+  display: flex;
   justify-content: center;
   flex-direction: column;
 
 }
 
 .footer-icons {
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
 
 }
+
 .black {
   color: #333;
   transition: all .3s ease-in-out;
@@ -314,40 +305,12 @@ text-align: center;
   text-align: center;
 }
 
-.footer-input{
+.footer-input {
   border: thin solid #333;
   padding: 0.5em 1.5em;
   color: #333;
   font-size: 1em;
   margin-bottom: 1em;
   transition: all 0.5s ease-in-out;
-}
-
-/* CONTENT 5 MENU */
-
-.content-5 {
-  height: 100vh;
-}
-.menu-images {
-  display: flex; 
-  justify-content: space-evenly;
-}
-
-.menu-image {
-  padding: 5%;
-  margin-left: 2em;
-}
-
-.menu-text {
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  padding: 4%;
-}
-
-.menu-button {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  margin: 0 auto; 
 }
 
