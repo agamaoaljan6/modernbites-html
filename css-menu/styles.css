@@ -92,26 +92,43 @@ small,
   z-index: 1030;
 }
 
+/* Hamburger */
 .nav {
-  width: 70%;
-  margin: 0 auto;
+  text-align: right;
+  height: 80px;
+  padding: 1%;
 }
 
 .menu {
+  padding: 1%;
+  margin: 0 100px 0 0;
   display: flex;
-  justify-content: space-between;
-  padding: 2em;
+  justify-content: space-evenly;
 }
 
-.menu-item {
-  padding: 0.1em;
+.menu a {
 
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
 }
 
-li a,
-.branding-link,
-.services-link {
-  /* Hover Effect */
+label {
+  margin: 0 10px 0 0;
+  font-size: 30px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+/* NEW CSS FOR HAMBURGER */
+.menu-items {
   background: linear-gradient(to bottom,
       var(--mainColor) 0%,
       var(--mainColor) 100%);
@@ -120,22 +137,19 @@ li a,
   background-size: 5px 1px;
   color: #fff;
   text-decoration: none;
-  transition: background-size 0.3s ease-in-out;
+  transition: background-size 0.5s ease-in-out;
   font-size: 22px;
 }
 
-li a:hover,
+.menu-items:hover,
 .branding-link:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all .3s ease-in-out;
   background-size: 4px 50px;
   color: black;
 }
 
-.services-link:hover {
-  transition: all 0.5s ease-in-out;
-  background-size: 4px 50px;
-  color: white;
-}
+/* END OF NAVBAR */
+
 
 /* BRANDING */
 
@@ -188,8 +202,8 @@ li a:hover,
 
 .food-menu {
   padding: 5%;
-  display: flex; 
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -199,7 +213,7 @@ li a:hover,
   font-size: 26px;
   margin: 0 auto;
   text-emphasis: center;
-  display: flex; 
+  display: flex;
   justify-content: center;
   /* background: url(/assets/images/gallery.jpg);
   height: 10vh;
@@ -210,7 +224,7 @@ li a:hover,
 
 
 .lunch-header span,
-.dinner-header span, 
+.dinner-header span,
 .drink-header span {
   font-size: 18px;
 }
@@ -224,13 +238,13 @@ li a:hover,
 .lunch-group,
 .dinner-group,
 .drink-group {
-  display: grid; 
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
   padding: 5%;
 }
 
-.lunch-menu, 
+.lunch-menu,
 .dinner-menu,
 .drink-menu {
   padding: 3%;

@@ -10,6 +10,7 @@
 
     <!-- <link rel="stylesheet" href="/css/debug.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/hamburger.css">
     <link rel="stylesheet" href="/css-gallery/styles.css" />
     <link rel="stylesheet" href="/css-gallery/mediaquery.css" />
 
@@ -24,16 +25,17 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a class="menu-items" href="/index.html">Home</a></li>
-                    <li><a class="menu-items" href="/about.html">About</a></li>
-
-                    <li><a class="menu-items" href="/gallery.html">Gallery</a></li>
-                    <li><a class="menu-items" href="/menu.html">Menu</a></li>
-                    <li><a class="menu-items" href="/reserve.html">Reserve</a></li>
-                </ul>
-            </nav>
+            <div class="nav" id="page-nav">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <a href="/index.html" class="menu-items">Home</a>
+                    <a href="/about.html" class="menu-items">About</a>
+                    <a href="/gallery.html" class="menu-items">Gallery</a>
+                    <a href="/menu.html" class="menu-items">Menu </a>
+                    <a href="/reserve.html" class="menu-items">Reserve</a>
+                </div>
+            </div>
         </header>
         <div class="branding">
             <h1 class="branding-name">GALLERY</h1>

@@ -91,27 +91,43 @@ small,
   left: 0;
   z-index: 1030;
 }
-
+/* Hamburger */
 .nav {
-  width: 70%;
-  margin: 0 auto;
+  text-align: right;
+  height: 80px;
+  padding: 1%;
 }
 
 .menu {
+  padding: 1%;
+  margin: 0 100px 0 0;
   display: flex;
-  justify-content: space-between;
-  padding: 2em;
+  justify-content: space-evenly;
 }
 
-.menu-item {
-  padding: 0.1em;
+.menu a {
 
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
 }
 
-li a,
-.branding-link,
-.services-link {
-  /* Hover Effect */
+label {
+  margin: 0 10px 0 0;
+  font-size: 30px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+/* NEW CSS FOR HAMBURGER */
+.menu-items {
   background: linear-gradient(to bottom,
       var(--mainColor) 0%,
       var(--mainColor) 100%);
@@ -120,22 +136,18 @@ li a,
   background-size: 5px 1px;
   color: #fff;
   text-decoration: none;
-  transition: background-size 0.3s ease-in-out;
+  transition: background-size 0.5s ease-in-out;
   font-size: 22px;
 }
 
-li a:hover,
+.menu-items:hover,
 .branding-link:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all .3s ease-in-out;
   background-size: 4px 50px;
   color: black;
 }
 
-.services-link:hover {
-  transition: all 0.5s ease-in-out;
-  background-size: 4px 50px;
-  color: white;
-}
+/* END OF NAVBAR */
 
 /* BRANDING */
 

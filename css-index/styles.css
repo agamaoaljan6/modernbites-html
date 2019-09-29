@@ -80,7 +80,6 @@ small,
 
 .sticky {
   background-color: #333;
-  padding: 0% 1%;
   transition: all 0.4s ease;
 }
 
@@ -92,26 +91,77 @@ small,
   z-index: 1030;
 }
 
+
+/* Hamburger */
 .nav {
-  width: 70%;
-  margin: 0 auto;
+  text-align: right;
+  height: 80px;
+  padding: 1%;
 }
 
 .menu {
+  padding: 1%;
+  margin: 0 100px 0 0;
   display: flex;
-  justify-content: space-between;
-  padding: 2em;
+  justify-content: space-evenly;
 }
 
-.menu-item {
-  padding: 0.1em;
-
+.menu a {
+  
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
 }
 
-li a,
+label {
+  margin: 0 10px 0 0;
+  font-size: 30px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+/* NEW CSS FOR HAMBURGER */
+.menu-items {
+  background: linear-gradient(to bottom,
+      var(--mainColor) 0%,
+      var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 5px 1px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-size 0.5s ease-in-out;
+  font-size: 22px;
+}
+
+.menu-items:hover,
+.branding-link:hover {
+  transition: all .3s ease-in-out;
+  background-size: 4px 50px;
+  color: black;
+}
+
+/* END OF NAVBAR */
+
+
+
+
+
+
+
+
+
+/* BRANDING */
+
 .branding-link,
 .services-link {
-  /* Hover Effect */
   background: linear-gradient(to bottom,
       var(--mainColor) 0%,
       var(--mainColor) 100%);
@@ -125,25 +175,7 @@ li a,
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
-
-
-li a:hover,
-.branding-link:hover {
-  transition: all .3s ease-in-out;
-  background-size: 4px 50px;
-  color: black;
-}
-
-.services-link:hover {
-  transition: all .3s ease-in-out;
-  background-size: 4px 50px;
-  color: white;
-}
-
-/* BRANDING */
 
 .branding {
   display: flex;
@@ -224,6 +256,12 @@ li a:hover,
   text-decoration: none;
   color: #333;
   font-size: 23px;
+}
+
+.services-link:hover {
+  transition: all .3s ease-in-out;
+  background-size: 4px 50px;
+  color: white;
 }
 
 .services-icon {

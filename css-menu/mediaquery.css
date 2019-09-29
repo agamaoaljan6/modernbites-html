@@ -41,3 +41,34 @@
         padding: 5%;
     }
 }
+
+@media only screen and (max-width: 812px) {
+    #page-nav label {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 90%;
+        display: none;
+        background: #333;
+    }
+
+    .menu a {
+        display: block;
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+
+    .menu-items {
+        background: none !important;
+        color: #fff;
+        text-decoration: none;
+        transition: background-size 0.5s ease-in-out;
+        font-size: 22px;
+    }
+
+}
