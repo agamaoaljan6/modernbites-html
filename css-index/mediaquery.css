@@ -51,15 +51,14 @@
     }
 
     .menu-images {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10%;
     }
-
     .menu-image {
-        display: flex;
-        width: 150px;
-        margin-left: 0 auto;
-        height: 150px;
+        margin: 0;
+        padding:2% 10%;
+        line-height: 0;
     }
 
     .menu-text {
