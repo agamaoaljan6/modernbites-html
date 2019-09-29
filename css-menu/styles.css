@@ -194,7 +194,8 @@ li a:hover,
 }
 
 .lunch-header,
-.dinner-header {
+.dinner-header,
+.drink-header {
   font-size: 26px;
   margin: 0 auto;
   text-emphasis: center;
@@ -204,25 +205,29 @@ li a:hover,
 
 
 .lunch-header span,
-.dinner-header span {
+.dinner-header span, 
+.drink-header span {
   font-size: 18px;
 }
 
 .lunch-name,
-.dinner-name {
+.dinner-name,
+.drink-name {
   font-size: 22px;
 }
 
 .lunch-group,
-.dinner-group {
+.dinner-group,
+.drink-group {
   display: grid; 
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 50px;
   padding: 5%;
 }
 
 .lunch-menu, 
-.dinner-menu {
+.dinner-menu,
+.drink-menu {
   padding: 3%;
 }
 
