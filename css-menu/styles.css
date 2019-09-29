@@ -71,11 +71,11 @@ small,
 
 .wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/assets/images/homepage.jpg);
+    url(/assets/images/aboutimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
 
 .sticky {
@@ -83,6 +83,7 @@ small,
   padding: 0% 1%;
   transition: all 0.4s ease;
 }
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -104,18 +105,16 @@ small,
 
 .menu-item {
   padding: 0.1em;
-  
+
 }
 
 li a,
 .branding-link,
 .services-link {
   /* Hover Effect */
-  background: linear-gradient(
-    to bottom,
-    var(--mainColor) 0%,
-    var(--mainColor) 100%
-  );
+  background: linear-gradient(to bottom,
+      var(--mainColor) 0%,
+      var(--mainColor) 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 5px 1px;
@@ -123,25 +122,21 @@ li a,
   text-decoration: none;
   transition: background-size 0.3s ease-in-out;
   font-size: 22px;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
 }
-
-
 
 li a:hover,
 .branding-link:hover {
-  transition: all .3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-size: 4px 50px;
   color: black;
 }
 
 .services-link:hover {
-  transition: all .3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-size: 4px 50px;
   color: white;
 }
+
 /* BRANDING */
 
 .branding {
@@ -154,6 +149,7 @@ li a:hover,
   font-size: 30px;
   text-transform: uppercase;
 }
+
 .branding .branding-image {
   text-align: center !important;
 }
@@ -161,10 +157,12 @@ li a:hover,
 .branding-button {
   margin: 0 5em;
 }
+
 .branding-link {
   margin-right: 5em;
   color: #fff;
 }
+
 .branding-item {
   display: flex;
   justify-content: center;
@@ -176,7 +174,7 @@ li a:hover,
   /* background: black; */
   color: #333;
   font-size: 1em;
-  transition: all .3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .branding-button:hover {
@@ -184,96 +182,58 @@ li a:hover,
   color: #fff;
 }
 
-/* CONTENT 2 - SERVICES */
 
-.content-2 {
-  background-color: #F5F3F1;
-  display: flex;
-  flex-direction: column;
-  padding: 7%;
-}
 
-.services {
+/* MENU */
+
+.food-menu {
+  padding: 5%;
   display: flex; 
-  align-content: center; 
+  flex-direction:column;
   justify-content: space-around;
-  /* height: 35vh; */
 }
 
-.services-title,
-.review-title {
+.lunch-header,
+.dinner-header {
+  font-size: 26px;
   margin: 0 auto;
-  text-align: center; 
-  padding: 4%;
-}
-
-.services-description {
-text-align: center;
-}
-
-.services-link {
-  text-transform: uppercase;
-  text-decoration: none; 
-  color: #333;
-  font-size: 23px;
-}
-
-.services-icon {
-  display: flex;
-  align-items: center;
+  text-emphasis: center;
+  display: flex; 
   justify-content: center;
-  font-size: 30px;
-  padding: 1em;
 }
 
 
-/* CONTENT 3 REVIEWS */
-
-.content-3 {
-  padding: 5%;
-  margin-top: 5em;
-  min-height: 70vh;
-  background-color: #F5F3F1;
-  color: #333;
-}
-.reviews {
-  display: flex; 
-  padding: 2%;
-  justify-content: space-around;
+.lunch-header span,
+.dinner-header span {
+  font-size: 18px;
 }
 
-.review-buttons {
-  display: flex; 
-  justify-content: space-evenly;
-  align-items: center;
+.lunch-name,
+.dinner-name {
+  font-size: 22px;
+}
+
+.lunch-group,
+.dinner-group {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   padding: 5%;
 }
 
-.review-button,
-.footer-button,
-.menu-button {
-  border: thin solid rgb(207, 207, 207);
-  padding: 0.5em 1.5em;
-  color: #333;
-  font-size: 1em;
-  margin-bottom: 1em;
-  transition: all .3s ease-in-out;
+.lunch-menu, 
+.dinner-menu {
+  padding: 3%;
 }
 
-.review-button:hover,
-.footer-button:hover ,
-.menu-button:hover{
-  background: var(--mainColor);
-  color: #fff;
-}
-
-/* CONTENT 4 - FOOTER */
+/* FOOTER */
 
 .footer {
-  padding: 5%;
+  padding: 3%;
   background-color: #636262;
   color: #F5F3F1;
 }
+
 .footer-content {
   display: flex;
   flex-direction: row;
@@ -281,80 +241,48 @@ text-align: center;
 }
 
 .left-side {
-  line-height: 30px; 
+  line-height: 20px;
   text-align: center;
 }
 
 .right-side {
-  display: flex; 
-  justify-content: space-around; 
-  align-items: center; 
-  flex-direction: column; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-soc {
-  display: flex; 
+  display: flex;
   justify-content: center;
   flex-direction: column;
 
 }
 
 .footer-icons {
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
 
 }
+
 .black {
   color: #333;
   transition: all .3s ease-in-out;
 }
 
 .black:hover {
-  color: rgb(204, 204, 204);
+  color: rgb(162, 160, 160);
 }
 
 .footer-newsletter {
   text-align: center;
 }
 
-.footer-input{
+.footer-input {
   border: thin solid #333;
   padding: 0.5em 1.5em;
   color: #333;
   font-size: 1em;
   margin-bottom: 1em;
-  transition: all .3s ease-in-out;
-}
-
-/* CONTENT 5 MENU */
-
-/* .content-5 {
-  height: 100vh;
-} */
-.menu-images {
-  display: flex; 
-  justify-content: center;
-}
-
-.menu-image {
-    display: flex;
-    padding: 2%;
-    margin-top: 5em;
-    justify-content: space-evenly;
-    width: 400px;
-    height: 400px;
-}
-
-.menu-text {
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  padding: 3%;
-  grid-gap: 20px;
-}
-
-.menu-button {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  margin: 0 auto; 
+  transition: all 0.5s ease-in-out;
 }
