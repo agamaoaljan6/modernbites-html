@@ -201,6 +201,11 @@ li a:hover,
   text-emphasis: center;
   display: flex; 
   justify-content: center;
+  /* background: url(/assets/images/gallery.jpg);
+  height: 10vh;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 

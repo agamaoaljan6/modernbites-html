@@ -1,0 +1,43 @@
+@media only screen and (max-width: 812px) {
+    .branding-name {
+        font-size: 60px;
+        margin-top: 1em;
+    }
+
+    .lunch-group,
+    .dinner-group,
+    .drink-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 5%;
+    }
+
+    .lunch-header,
+    .dinner-header,
+    .drink-header {
+        font-size: 26px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-input {
+        text-align: center;
+    }
+
+    .right-side {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        line-height: 2;
+        padding: 5%;
+    }
+}

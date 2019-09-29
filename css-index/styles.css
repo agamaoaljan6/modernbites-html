@@ -156,6 +156,7 @@ li a:hover,
 }
 .branding .branding-image {
   text-align: center !important;
+  margin-top: 4em;
 }
 
 .branding-button {

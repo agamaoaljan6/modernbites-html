@@ -1,0 +1,63 @@
+@media only screen and (max-width: 812px) {
+    .branding-name {
+        font-size: 60px;
+        margin-top: 1em;
+    }
+
+    .chefs {
+        display: flex;
+        padding: 2%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .chef-background {
+        display: flex;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+        margin: 1em auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .chef-image {
+        display: flex;
+        padding: 10%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+    }
+
+    .chef-description {
+        text-align: center;
+    }
+
+    .background-description {
+        padding: 5%;
+        text-align: center;
+
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-input {
+        text-align: center;
+    }
+
+    .right-side {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        line-height: 2;
+        padding: 5%;
+    }
+}
