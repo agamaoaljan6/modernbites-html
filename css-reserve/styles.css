@@ -71,7 +71,7 @@ small,
 
 .wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/assets/images/aboutimg.jpg);
+    url(/assets/images/reserve.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -184,51 +184,31 @@ li a:hover,
 
 
 
-/* MENU */
+/* RESERVE */
 
-.food-menu {
-  padding: 5%;
-  display: flex; 
-  flex-direction:column;
-  justify-content: space-around;
-}
-
-.lunch-header,
-.dinner-header,
-.drink-header {
-  font-size: 26px;
-  margin: 0 auto;
-  text-emphasis: center;
-  display: flex; 
-  justify-content: center;
-}
-
-
-.lunch-header span,
-.dinner-header span, 
-.drink-header span {
-  font-size: 18px;
-}
-
-.lunch-name,
-.dinner-name,
-.drink-name {
-  font-size: 22px;
-}
-
-.lunch-group,
-.dinner-group,
-.drink-group {
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
   padding: 5%;
 }
 
-.lunch-menu, 
-.dinner-menu,
-.drink-menu {
+.reservation-description {
+  text-align: center;
+}
+
+.reservation-form input {
+  height: 5vh; 
+  width: 30vw;
+}
+
+.reservation-form div {
   padding: 3%;
+}
+
+.date input {
+  width: 3vw !important;
 }
 
 /* FOOTER */
@@ -292,7 +272,8 @@ li a:hover,
   transition: all 0.5s ease-in-out;
 }
 
-.footer-button {
+.footer-button,
+.form-button {
   border: thin solid rgb(207, 207, 207);
   padding: 0.5em 1.5em;
   color: #333;
@@ -302,7 +283,8 @@ li a:hover,
   border-radius: 3px;
 }
 
-.footer-button:hover {
+.footer-button:hover,
+.form-button:hover {
   background: var(--mainColor);
   color: #fff;
 }

@@ -28,11 +28,11 @@
                     <li><a class="menu-items" href="/index.html">Home</a></li>
                     <li><a class="menu-items" href="/about.html">About</a></li>
                     <li>
-                        <a class="menu-items" href="/html/catering.html">Catering</a>
+                        <a class="menu-items" href="/catering.html">Catering</a>
                     </li>
-                    <li><a class="menu-items" href="/html/gallery.html">Gallery</a></li>
+                    <li><a class="menu-items" href="/gallery.html">Gallery</a></li>
                     <li><a class="menu-items" href="/menu.html">Menu</a></li>
-                    <li><a class="menu-items" href="/html/reserve.html">Reserve</a></li>
+                    <li><a class="menu-items" href="/reserve.html">Reserve</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,11 +40,103 @@
             <h1 class="branding-name">RESERVE</h1>
         </div>
     </div>
-    <section>
-        <div>
-            <h1>COMING SOON</h1>
+    <section class="reservation">
+        <div class="reservation-description">
+            <h1>Reservations</h1>
+            <p>For parties of six or more, we recommend making reservations at least two weeks in advance. <br> For
+                walk-ins,
+                we only seat parties on a first come, first served basis.</p>
         </div>
+
+        <div class="reservation-form">
+            <form action="">
+                <div class="name">
+                    <label for="name" id="name">
+                        Name <span>*</span>
+                    </label>
+                    <br>
+                    <input type="name" name="name" placeholder=" Fullname">
+                </div>
+                <div class="phone-number">
+                    <label for="name" id="phone-number">
+                        Phone Number <span>*</span>
+                    </label>
+                    <br>
+                    <input type="number" name="phone-number" placeholder=" Phone number">
+                </div>
+                <div class="date">
+                    <label for="date" id="date">
+                        Date <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" name="date" placeholder=" MM">
+                    <input type="text" name="date" placeholder=" DD">
+                    <input type="text" name="date" placeholder=" YYYY">
+                </div>
+                <div class="email">
+                    <label for="email" id="email">
+                        Email Address <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" name="email" placeholder=" Email address">
+                </div>
+                <div class="guest">
+                    <label for="guest" id="guest">
+                        Number of guests <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" name="guest" placeholder=" Number of guests">
+                </div>
+                <div class="comments">
+                    <label for="comments" id="comments">
+                        Comments <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" name="comments" placeholder=" Comments">
+                </div>
+            </form>
+        </div>
+        <input class="form-button" type="submit" />
     </section>
+    <!-- CONTENT 4 -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="content-4">
+            <div class="footer-content">
+                <div class="left-side">
+                    <h1>Locations</h1>
+                    <p class="footer-address">41 Hamilton St. La Porte, IN 46350</p>
+                    <p class="footer-address">622 Hilldale St. Kennesaw, GA 30144</p>
+                    <p class="footer-address">199 Creekside St. Addison, IL 60101</p>
+                </div>
+                <div class="left-side">
+                    <h1>Hours</h1>
+                    <p>Tuesday to Friday | Saturday & Sunday</p>
+                    <p>Lunch 11:00am &mdash; 3:00pm | Dinner 5:00pm &mdash; 9:00pm</p>
+                </div>
+
+                <div class="right-side">
+                    <div class="footer-soc">
+                        <p>Follow us on our Social medias</p>
+                        <div class="footer-icons">
+                            <span><a href="http://www.facebook.com"><i
+                                        class="fa fa-facebook fa-3x black"></i></a></span>
+                            <span><a href="http://www.twitter.com"><i class="fa fa-twitter fa-3x black"></i></a></span>
+                            <span><a href="http://www.instagram.com"><i
+                                        class="fa fa-instagram fa-3x black"></i></a></span>
+                        </div>
+                    </div>
+                    <div class="footer-newsletter">
+                        <label for="email">
+                            <p>Subscribe to our newsletter</p>
+                        </label>
+                        <input class="footer-input" id="email" type="text" placeholder="Email" />
+                        <input class="footer-button" type="submit" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
