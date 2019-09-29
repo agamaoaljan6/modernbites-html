@@ -189,7 +189,6 @@ li a:hover,
 .content-3 {
   padding: 5%;
   margin-top: 5em;
-  min-height: 100vh;
   background-color: #F5F3F1;
   color: #333;
 }
@@ -204,16 +203,26 @@ li a:hover,
 
 .chef-description {
   padding: 5%; 
-
 }
 
-.menu-image {
+.chef-image {
    display: flex;
    padding: 2%;
    justify-content:center;
    align-items: center;
    margin: 0 auto;
+   width: 400px;
+   height: 400px;
 }
+
+.chef-background {
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+}
+
 
 .chef-title,
 .chef-name {
@@ -222,35 +231,17 @@ li a:hover,
   padding: 4%;
 }
 
-.chef-buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 3%;
+
+/* BACKGROUND */
+
+.background {
+  display: flex; 
+  flex-direction: column;
 }
 
-.chef-button,
-.footer-button,
-.menu-button {
-  border: thin solid #333;
-  padding: 0.5em 1.5em;
-  color: #333;
-  font-size: 1em;
-  margin-bottom: 1em;
-  transition: all 0.5s ease-in-out;
+.background-description {
+  padding: 2.5% 20%;
 }
-
-.chef-button:hover,
-.footer-button:hover,
-.menu-button:hover {
-  background: var(--mainColor);
-  color: #fff;
-}
-
-
-/* CONTENT 5 MENU */
-
-
 
 
 /* CONTENT 4 - FOOTER */
