@@ -1,4 +1,9 @@
 @media only screen and (max-width: 812px) {
+    .branding-name {
+        font-size: 60px;
+        margin-top: 1em;
+    }
+
     .reservation-form input {
         height: 5vh;
         width: 50vw;
@@ -6,7 +11,7 @@
     }
 
     .date input {
-        width: 13vw !important;
+        width: 35vw !important;
     }
 
     .footer-content {
@@ -25,5 +30,16 @@
         flex-direction: column;
         line-height: 2;
         padding: 5%;
+    }
+
+    .footer-button,
+    .form-button {
+        border: thin solid rgb(207, 207, 207);
+        padding: 0.5em 1.5em;
+        color: #333;
+        font-size: 1em;
+        margin: 1.2em auto;
+        transition: all .3s ease-in-out;
+        border-radius: 3px;
     }
 }

@@ -83,6 +83,7 @@ small,
   padding: 0% 1%;
   transition: all 0.4s ease;
 }
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -104,28 +105,27 @@ small,
 
 .menu-item {
   padding: 0.1em;
-  
+
 }
 
 li a,
 .branding-link,
 .services-link {
   /* Hover Effect */
-  background: linear-gradient(
-    to bottom,
-    var(--mainColor) 0%,
-    var(--mainColor) 100%
-  );
+  background: linear-gradient(to bottom,
+      var(--mainColor) 0%,
+      var(--mainColor) 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 5px 1px;
   color: #fff;
   text-decoration: none;
-  transition: background-size 0.3s ease-in-out;
+  transition: background-size 0.5s ease-in-out;
   font-size: 22px;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 
@@ -142,6 +142,7 @@ li a:hover,
   background-size: 4px 50px;
   color: white;
 }
+
 /* BRANDING */
 
 .branding {
@@ -154,6 +155,7 @@ li a:hover,
   font-size: 30px;
   text-transform: uppercase;
 }
+
 .branding .branding-image {
   text-align: center !important;
   margin-top: 4em;
@@ -161,11 +163,15 @@ li a:hover,
 
 .branding-button {
   margin: 0 5em;
+  transition: all .5s ease-in-out !important;
 }
+
 .branding-link {
   margin-right: 5em;
   color: #fff;
+  transition: all .5s ease-in-out !important;
 }
+
 .branding-item {
   display: flex;
   justify-content: center;
@@ -196,8 +202,8 @@ li a:hover,
 }
 
 .services {
-  display: flex; 
-  align-content: center; 
+  display: flex;
+  align-content: center;
   justify-content: space-around;
   /* height: 35vh; */
 }
@@ -205,17 +211,17 @@ li a:hover,
 .services-title,
 .review-title {
   margin: 0 auto;
-  text-align: center; 
+  text-align: center;
   padding: 4%;
 }
 
 .services-description {
-text-align: center;
+  text-align: center;
 }
 
 .services-link {
   text-transform: uppercase;
-  text-decoration: none; 
+  text-decoration: none;
   color: #333;
   font-size: 23px;
 }
@@ -238,18 +244,19 @@ text-align: center;
   background-color: #F5F3F1;
   color: #333;
 }
+
 .reviews {
-  display: flex; 
+  display: flex;
   padding: 2%;
   justify-content: space-around;
 }
 
 .review-buttons {
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 5%;
-   border-radius: 3px;
+  border-radius: 3px;
 }
 
 .review-button,
@@ -261,12 +268,12 @@ text-align: center;
   font-size: 1em;
   margin-bottom: 1em;
   transition: all .3s ease-in-out;
-   border-radius: 3px;
+  border-radius: 3px;
 }
 
 .review-button:hover,
-.footer-button:hover ,
-.menu-button:hover{
+.footer-button:hover,
+.menu-button:hover {
   background: var(--mainColor);
   color: #fff;
 }
@@ -278,6 +285,7 @@ text-align: center;
   background-color: #636262;
   color: #F5F3F1;
 }
+
 .footer-content {
   display: flex;
   flex-direction: row;
@@ -285,29 +293,30 @@ text-align: center;
 }
 
 .left-side {
-  line-height: 30px; 
+  line-height: 30px;
   text-align: center;
 }
 
 .right-side {
-  display: flex; 
-  justify-content: space-around; 
-  align-items: center; 
-  flex-direction: column; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-soc {
-  display: flex; 
+  display: flex;
   justify-content: center;
   flex-direction: column;
 
 }
 
 .footer-icons {
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
 
 }
+
 .black {
   color: #333;
   transition: all .3s ease-in-out;
@@ -321,7 +330,7 @@ text-align: center;
   text-align: center;
 }
 
-.footer-input{
+.footer-input {
   border: thin solid #333;
   padding: 0.5em 1.5em;
   color: #333;
@@ -336,29 +345,29 @@ text-align: center;
   height: 100vh;
 } */
 .menu-images {
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 
 .menu-image {
-    display: flex;
-    padding: 2%;
-    margin-top: 5em;
-    justify-content: space-evenly;
-    width: 400px;
-    height: 400px;
+  display: flex;
+  padding: 2%;
+  margin-top: 5em;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 400px;
 }
 
 .menu-text {
-  display: grid; 
+  display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3%;
   grid-gap: 20px;
 }
 
 .menu-button {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
