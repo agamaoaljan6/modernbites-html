@@ -96,11 +96,9 @@ small,
 .nav {
   text-align: right;
   height: 80px;
-  padding: 1%;
 }
 
 .menu {
-  padding: 1%;
   margin: 0 100px 0 0;
   display: flex;
   justify-content: space-evenly;
@@ -113,7 +111,7 @@ small,
   margin: 0 10px;
 }
 
-label {
+.header label {
   margin: 0 10px 0 0;
   font-size: 30px;
   line-height: 70px;
