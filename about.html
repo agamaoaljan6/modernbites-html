@@ -9,7 +9,7 @@
   <!-- DEBUG CSS -->
 
   <!-- <link rel="stylesheet" href="/css/debug.css" /> -->
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/css-about/styles.css" />
 
   <!-- FONT AWESOME ICONS -->
@@ -27,9 +27,7 @@
         <ul class="menu">
           <li><a class="menu-items" href="/index.html">Home</a></li>
           <li><a class="menu-items" href="/about.html">About</a></li>
-          <li>
-            <a class="menu-items" href="/catering.html">Catering</a>
-          </li>
+
           <li><a class="menu-items" href="/gallery.html">Gallery</a></li>
           <li><a class="menu-items" href="/menu.html">Menu</a></li>
           <li><a class="menu-items" href="/reserve.html">Reserve</a></li>
@@ -48,7 +46,8 @@
     <div class="chefs">
       <div class="chef-item">
         <figure>
-          <img src="./assets/images/chefs/chef1.jpg" alt="" class="chef-image" />
+          <img src="./assets/images/chefs/chef1.jpg" alt="" class="chef-image" data-aos="flip-left"
+            data-aos-duration='1000' data-aos-easing="ease-in-out" />
         </figure>
         <h4 class="chef-name">Arya Stark</h4>
         <h6 class="chef-title">Executive Chef</h6>
@@ -63,7 +62,8 @@
       </div>
       <div class="chef-item">
         <figure>
-          <img src="./assets/images/chefs/chef2.jpg" alt="" class="chef-image" />
+          <img src="./assets/images/chefs/chef2.jpg" alt="" class="chef-image" data-aos="flip-left"
+            data-aos-duration='1100' data-aos-easing="ease-in-out" />
         </figure>
         <h4 class="chef-name">John Snow</h4>
         <h6 class="chef-title">Sous Chef</h6>
@@ -78,7 +78,8 @@
       </div>
       <div class="chef-item">
         <figure>
-          <img src="./assets/images/chefs/chef3.jpg" alt="" class="chef-image" />
+          <img src="./assets/images/chefs/chef3.jpg" alt="" class="chef-image" data-aos="flip-left"
+            data-aos-duration='1200' data-aos-easing="ease-in-out" />
         </figure>
         <h4 class="chef-name">Daenerys Snow</h4>
         <h6 class="chef-title">Line Chef</h6>
@@ -99,7 +100,8 @@
       <div class="background-description">
         <h1 class="background-title">Background</h1>
         <figure>
-          <img src="./assets/images/chefs/chef4.jpg" alt="" class="chef-background" width="800" height="950" />
+          <img src="./assets/images/chefs/chef4.jpg" alt="" class="chef-background" width="800" height="950"
+            data-aos="fade-up" data-aos-duration='1000' data-aos-easing="ease-in-out" />
         </figure>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam neque
@@ -122,7 +124,8 @@
           Cupiditate?
         </p>
         <figure>
-          <img src="./assets/images/chefs/chef5.jpg" alt="" class="chef-background" width="800" height="1050" />
+          <img src="./assets/images/chefs/chef5.jpg" alt="" class="chef-background" width="800" height="1050"
+            data-aos="fade-up" data-aos-duration='1100' data-aos-easing="ease-in-out" />
         </figure>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam neque
@@ -185,7 +188,10 @@
       </div>
     </section>
   </footer>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
